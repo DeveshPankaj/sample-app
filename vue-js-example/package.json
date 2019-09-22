@@ -16,5 +16,11 @@
   "license": "ISC",
   "dependencies": {
     "androidjs": "^1.0.5"
-  }
+  },
+  "theme": {
+    	"fullScreen": true,
+    	"colorAccent": "@color/colorAccent",
+    	"colorPrimary": "@color/colorPrimary",
+    	"colorPrimaryDark": "@color/colorPrimaryDark"
+    }
 }
