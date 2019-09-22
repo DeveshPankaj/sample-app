@@ -6,12 +6,18 @@
 
 	<link rel="stylesheet" href="../assets/bootstrap.min.css">
 
-	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="../assets/vue.js"></script>
 </head>
 
 <style>
 	.app{
 		font-size:30px;
+	}
+	li{
+		color: gray;
+	}
+	.selected {
+		background-color: #5ee6c1;
 	}
 </style>
 
@@ -26,7 +32,7 @@
 	  </div>
 	</div>
 	<ul class="list-group" style="margin-right: 10px;margin-left: 10px">
-	  <li class="list-group-item" @click="remove(u)" v-for="u in users">{{u}}</li>
+	  <li class="list-group-item" @click="toggle(u)" v-for="u in users" v-bind:class="{ 'selected': u.selected }">{{u.name}}</li>
 	</ul>
 </div>
 
