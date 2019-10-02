@@ -12,7 +12,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "install": "adb install ./dist/app.apk",
-    "run": "adb shell am start -n com.android.js.app/com.android.js.webview.MainActivity",
+    "run": "adb shell am start -n com.android.js.vue_example/com.android.js.webview.MainActivity",
     "build:run": "androidjs build && npm run install && npm run run"
   },
   "author": "",
